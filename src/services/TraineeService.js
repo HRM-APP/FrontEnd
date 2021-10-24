@@ -21,6 +21,7 @@ class TraineeService {
     }
 
     deleteTrainee(traineeId){
+        alert(`Trainee with Id ${traineeId} has removed`);
         return axios.delete(TRAINEE_API_BASE_URL + '/' + traineeId);
     }
 }

@@ -21,6 +21,7 @@ class JobService {
     }
 
     deleteJob(jobId){
+        alert(`Job with Id ${jobId} has removed`);
         return axios.delete(JOB_API_BASE_URL + '/' + jobId);
     }
 }
